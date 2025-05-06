@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Valor do almoço por Kg [2]
+    Peça para o usuário informar quanto pesou o seu prato de comida e também informar o preço do Kg no Buffet. Apresente o preço da refeição ao final do programa.
+    */
+
+    //ENTRADA
+    const peso = Number(prompt("Qual o peso do seu prato?"));
+    const preco = Number(prompt("Qual o preço do quilo do prato?"));
+    
+    //PROCESSAMENTO
+    const precoFinal = peso * preco
+    
+    //SAÍDA
+    document.write("O preço do seu prato foi R$" + precoFinal.toFixed(2));
+    
+</script>

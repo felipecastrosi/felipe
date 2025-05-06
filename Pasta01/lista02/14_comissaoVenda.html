@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Comissão por venda de veículos
+    Considere que uma revendedora paga a seus funcionários um salário fixo por mês, mais R$ 225,00 para cada carro vendido e, além disso, 5% do valor das vendas efetuadas por ele. Pergunte ao usuário qual o seu salário fixo, quantos carros foram vendidos e o valor total das vendas. Calcule e apresente qual a remuneração final do vendedor, funcionário da revendedora. Também apresente qual será o salário após o desconto de 20% de impostos.
+    */
+
+    //ENTRADA
+    const salarioFixo = Number(prompt("Qual é o seu salário fixo?"));
+    const carros = Number(prompt("Quantos carros você vendeu?"));
+    const vendas = Number(prompt("Qual o valor das suas vendas?"));
+    
+    //PROCESSAMENTO
+    const salarioFinal = salarioFixo + (carros * 225) + (vendas * 5 / 100);
+    const salarioImposto = salarioFinal - (salarioFinal * 20 / 100);
+    
+    //SAÍDA
+    document.write("Seu salário final é R$"+salarioFinal+", e após impostos fica R$"+salarioImposto);
+    
+</script>
